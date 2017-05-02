@@ -9,9 +9,19 @@ use Hash;
 use Response;
 use App\User;
 use JWTAuth;
+use File;
 
 class AuthController extends Controller
 {
+
+
+    public function index()
+      {
+        return File::get('index.html');
+      }
+
+
+
   public function signUp(Request $request)
   {
     $rules=[
