@@ -29,7 +29,7 @@ Route::post('deletePost/{id}','PostController@destroy');
 
 
 
-Route::any('(path?)', 'UsersController@index')->where("path"," .+ ")
+Route::any('{path?}', 'UsersController@index')->where("path"," .+ ");
 
 //Route::middleware('auth:api')->get('/user', function (Request $request) {
     //return $request->user();

@@ -10,4 +10,4 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::any('(path?)', 'UsersController@index')->where("path"," .+ ")
+Route::any('{path?}', 'UsersController@index')->where("path"," .+ ");
